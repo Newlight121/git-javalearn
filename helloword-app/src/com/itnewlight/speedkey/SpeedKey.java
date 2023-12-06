@@ -1,4 +1,4 @@
-package com.itnewlight.hello.speedkey;
+package com.itnewlight.speedkey;
 
 public class SpeedKey {
     public static void main(String[] args) {

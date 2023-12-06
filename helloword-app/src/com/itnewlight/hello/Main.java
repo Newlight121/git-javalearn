@@ -1,4 +1,4 @@
-package com.itnewlight.hello.hello;
+package com.itnewlight.hello;
 
 public class Main {
     public static void main(String[] args) {
