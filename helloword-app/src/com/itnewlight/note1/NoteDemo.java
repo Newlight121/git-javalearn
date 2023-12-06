@@ -1,4 +1,4 @@
-package com.itnewlight.note;
+package com.itnewlight.note1;
 
 public class NoteDemo {
     public static void main(String[] args) {
