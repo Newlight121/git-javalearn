@@ -5,7 +5,7 @@ public class DoWhileDemo {
         int i =5;
         do{//dowhile优先执行
             System.out.println(i);
-            i++;
-        }while (i*i<20);
+            i--;
+        }while (i*i>5);
     }
 }
