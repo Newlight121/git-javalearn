@@ -31,7 +31,7 @@ public class case_exercise9 {
             }
         }
 
-        int scb = 0;
+        int scb;
         while (true) {
             System.out.println("选择篮球数：");
             scb = sc.nextInt();
@@ -68,8 +68,8 @@ public class case_exercise9 {
         Random r = new Random();
         int[] rd_luck = new int[7];
         for (int i = 0; i < 6; i++) {
-            int rdr = r.nextInt(33) + 1;
             while (true) {
+                int rdr = r.nextInt(33) + 1;
                 if(!exist(rd_luck,rdr)){
                     rd_luck[i]=rdr;
                     break;
@@ -93,9 +93,11 @@ public class case_exercise9 {
             b_same++;
 
         int judgeequal = r_same*10+b_same;
-        switch (judgeequal){
+        switch (judgeequal) {
             case 1:
                 System.out.println("六等奖，中0+1，5元");break;
+            case 10:
+                System.out.println("六等奖，中1+0，5元");break;
             case 11:
                 System.out.println("六等奖，中1+1，5元");break;
             case 21:
@@ -114,6 +116,8 @@ public class case_exercise9 {
                 System.out.println("二等奖，中6+0，500w元");break;
             case 61:
                 System.out.println("一等奖，中6+1，1000w元");break;
+            default:
+                System.out.println("未中奖");
         }
 
     }
